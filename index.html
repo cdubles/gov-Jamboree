@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="mainStyle.css" />
+    <title>Jamboree</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Government Jamboree</h1>
+      <h2>What is the state of the United States cyber defense?</h2>
+    </div>
+    <div id='teams'>
+      <p class='team' id='team1'>team 1:0</p><button onclick='decrease("1")'>-</button> <button onclick='increase("1")'>+</button> 
+      <p class='team' id='team2'>team 2:0</p><button onclick='decrease("2")'>-</button> <button onclick='increase("2")'>+</button> 
+      <p class='team' id='team3'>team 3:0</p><button onclick='decrease("3")'>-</button> <button onclick='increase("3")'>+</button>
+      <p class='team' id='team4'>team 4:0</p><button onclick='decrease("4")'>-</button> <button onclick='increase("4")'>+</button>
+    </div>
+  <div id='game'>
+    <table>
+      <tr>
+        <th>attack strategies</th>
+        <th>interesting statistics</th>
+        <th>political involvment</th>
+        <th>place holder</th> 
+      </tr>
+      <tr id='100'>
+        <td onclick="$('#question11').show()">
+          <div>
+          <p>100</p>
+          
+          <div class='question' id="question11" hidden>
+            <p> test question</p>
+            <select name="answerSelect" id="questionSelect11">
+              <option value="wrong">wrong answer</option>
+              <option value="wrong">wrong answer</option>
+              <option value="correct">correct answer</option>
+              <option value="wrong">wrong answer</option>
+            </select> <br>
+            <button class='submit-button' id='submitQuestion11' onclick="submitAnswer('11')">submit</button>
+          </div>
+            <div class='answer' id='answer11' hidden>
+              <p> test answer</p>
+          </div>
+        </div>
+      </td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+      </tr>
+      <tr id='200'>
+        <td>200</td>
+        <td>200</td>
+        <td>200</td>
+        <td>200</td>
+      </tr>
+      <tr id='300'>
+        <td>300</td>
+        <td>300</td>
+        <td>300</td>
+        <td>300</td>
+      </tr>
+      <tr id='400'>
+        <td>400</td>
+        <td>400</td>
+        <td>400</td>
+        <td>400</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
