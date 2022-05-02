@@ -14,7 +14,10 @@ div#header {
 table,th,td{
   border: 1px solid black;
 }
-
+td,th,select{
+  word-wrap: break-word;
+  max-width: 20vw;
+}
 div#game{
   display: flex;
   justify-content: center;
